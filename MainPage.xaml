@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZBCollegeNetWorkLogin.MainPage">
+    <ScrollView HorizontalScrollBarVisibility="Always" HorizontalOptions="StartAndExpand">
+        <FlexLayout Wrap="Wrap" JustifyContent="Start" FlowDirection="LeftToRight" Margin="0,30,0,0">
+            <Image Source="dotnet_bot.png" HorizontalOptions="Start" FlowDirection="LeftToRight" FlexLayout.AlignSelf="Start" Margin="50" />
+            <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="StartAndExpand" HeightRequest="400" HorizontalOptions="Start"
+        >
+
+                <Label Text="学号" HorizontalTextAlignment="Start" WidthRequest="300"/>
+                <Editor x:Name="mAccount" AutoSize="TextChanges" WidthRequest="300"/>
+
+                <Label Text="密码" HorizontalTextAlignment="Start" WidthRequest="300" />
+                <Editor x:Name="mPassword" AutoSize="TextChanges" WidthRequest="300"/>
+
+                <Label Text="目标设备IP地址" HorizontalTextAlignment="Start" WidthRequest="300" />
+                <Editor x:Name="mIP" AutoSize="TextChanges" WidthRequest="300"/>
+
+                <Label Text="目前只支持中国移动"></Label>
+                <Label x:Name="mIPShow"></Label>
+            </VerticalStackLayout >
+            <VerticalStackLayout WidthRequest="300" HeightRequest="500" Padding="30,0" Spacing="25" Margin="10,0,0,0">
+                <Label WidthRequest="300" Text="这是一个丹阳中北学院网络登录器，只需要设备连接上NNUZB，则可使用本软件，帮助那台连接上NNUZB的设备，登录网络。"></Label>
+                <Label WidthRequest="300" Text="使用方法：使得PS5或Switch或者小米电视，连接上NNUZB后，查看网络连接状态，获得IPV4地址，输入进本软件相关地方。设置好密码和账户，并且*本机器也要在NNUZB中*即可点击下方按钮为那台设备登录。"></Label>
+                <Button x:Name="mButton" Text="登录" Clicked="mButton_Clicked"></Button>
+                <Grid FlowDirection="LeftToRight">
+                    <CheckBox x:Name="mSaveData" IsChecked="False"></CheckBox>
+                    <Label Text="保存账号和密码在本地" Margin="40,0,0,0"></Label>
+                </Grid>
+                <Label WidthRequest="300" Text="常见失败原因：密码账号不正确、IPV4地址获得方式设置为了手动。"></Label>
+            </VerticalStackLayout>
+        </FlexLayout>
+    </ScrollView>
+</ContentPage>

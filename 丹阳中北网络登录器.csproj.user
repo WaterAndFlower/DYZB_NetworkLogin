@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <IsFirstTimeProjectOpen>False</IsFirstTimeProjectOpen>
+    <ActiveDebugFramework>net6.0-windows10.0.19041.0</ActiveDebugFramework>
+    <ActiveDebugProfile>Windows Machine</ActiveDebugProfile>
+    <Source>C:\Users\PowerBear\Pictures\我的商标\头像圆.png</Source>
+    <SmallTileSource>C:\Users\PowerBear\Pictures\我的商标\头像圆.png</SmallTileSource>
+    <MediumTileSource>C:\Users\PowerBear\Pictures\我的商标\头像圆.png</MediumTileSource>
+    <WideTileSource>C:\Users\PowerBear\Pictures\我的商标\头像圆.png</WideTileSource>
+    <LargeTileSource>C:\Users\PowerBear\Pictures\我的商标\头像圆.png</LargeTileSource>
+    <AppIconSource>C:\Users\PowerBear\Pictures\我的商标\头像圆.png</AppIconSource>
+    <SplashScreenSource>C:\Users\PowerBear\Pictures\我的商标\头像圆.png</SplashScreenSource>
+    <BadgeLogoSource>C:\Users\PowerBear\Pictures\我的商标\头像圆.png</BadgeLogoSource>
+    <PackageLogoSource>C:\Users\PowerBear\Pictures\我的商标\头像圆.png</PackageLogoSource>
+    <UapAppxPackageBuildMode>SideloadOnly</UapAppxPackageBuildMode>
+    <AppxShowAllApps>False</AppxShowAllApps>
+    <_LastSelectedProfileId>MSIX-win10-x64.pubxml</_LastSelectedProfileId>
+    <PackageOptionalProjectsInIdeBuilds>False</PackageOptionalProjectsInIdeBuilds>
+    <SelectedPlatformGroup>Emulator</SelectedPlatformGroup>
+  </PropertyGroup>
+  <ItemGroup>
+    <MauiXaml Update="Login.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Platforms\Windows\Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+</Project>
